@@ -18,5 +18,8 @@
     var_dump($a*$b);
     echo "<br>";
 
-    echo is_int($a);
+    echo "is_int($a)<br>";
+
+    $colour = array("Blue", "Black", "Red", "White");
+    echo $colour[0];
 ?>
