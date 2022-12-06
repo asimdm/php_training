@@ -22,4 +22,6 @@
 
     $colour = array("Blue", "Black", "Red", "White");
     echo $colour[0];
+    echo "<br>";
+    var_dump($colour);
 ?>
