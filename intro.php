@@ -24,4 +24,10 @@
     echo $colour[0];
     echo "<br>";
     var_dump($colour);
+
+    $str = "Techno India NJR";
+    echo "<br>".strlen($str);
+    echo "<br>".str_word_count($str);
+    echo "<br>".strrev($str);
+    echo "<br>".strpos($str,"India");
 ?>
