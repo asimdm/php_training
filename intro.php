@@ -30,4 +30,5 @@
     echo "<br>".str_word_count($str);
     echo "<br>".strrev($str);
     echo "<br>".strpos($str,"India");
+    echo "<br>".str_replace("India","Universe",$str);
 ?>
