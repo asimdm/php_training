@@ -18,8 +18,5 @@
     var_dump($a*$b);
     echo "<br>";
 
-    if($a)
-        echo "true";
-    else
-        echo "false";
+    echo is_int($a);
 ?>
