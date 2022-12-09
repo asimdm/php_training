@@ -31,4 +31,13 @@
     echo "<br>".strrev($str);
     echo "<br>".strpos($str,"India");
     echo "<br>".str_replace("India","Universe",$str);
+    echo "<br>".strtoupper($str);
+    echo "<br>".strtolower($str);
+    echo "<br>".$str." is the IIT of Udaipur"."<br>";
+
+    if (filter_var($str, FILTER_VALIDATE_EMAIL)) {
+        echo("$str is a valid email address");
+      } else {
+        echo("$str is not a valid email address");
+      }      
 ?>
