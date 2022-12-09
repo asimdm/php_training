@@ -22,18 +22,22 @@ echo "<br>"."<br>";
 
 $d=strtotime("tomorrow");
 echo date("Y-m-d h:i:sa", $d) . "<br>";
-$d=strtotime("next Saturday");
+$d=strtotime("next thursday");
 echo date("Y-m-d h:i:sa", $d) . "<br>";
 $d=strtotime("+3 Months");
 echo date("Y-m-d h:i:sa", $d) . "<br>";
 echo "<br>"."<br>";
 
-$startdate = strtotime("Saturday");
-$enddate = strtotime("+6 weeks", $startdate);
-while ($startdate < $enddate) {
+$d= mktime(0,0,0,1,1,2023);
+$count=0;
+$startdate = strtotime("Sunday",$d);
+$enddate = mktime(0,0,0,12,31,2023);
+while ($startdate <= $enddate) {
   echo date("M d", $startdate) . "<br>";
   $startdate = strtotime("+1 week", $startdate);
+  $count = $count+1;
 }
+echo "<br>".$count;
 echo "<br>"."<br>";
 
 
